@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/backupbuid
 # misc
 .DS_Store
 .env.local

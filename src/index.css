@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Đảm bảo modal chiếm toàn bộ màn hình trên mobile */
+@media (max-width: 768px) {
+  .custom-modal .ant-modal-content {
+    height: 100vh;
+    border-radius: 0;
+  }
+  .custom-modal .ant-modal-header,
+  .custom-modal .ant-modal-footer {
+    padding: 16px;
+  }
+  .custom-modal .ant-modal-body {
+    padding: 16px;
+    max-height: calc(100vh - 110px); /* Giới hạn chiều cao body để cuộn */
+    overflow-y: auto;
+  }
+}
